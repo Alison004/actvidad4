@@ -1,0 +1,33 @@
+/* Efecto 1: Transformación 2D */
+header {
+    /* transform: rotate(10deg); */
+}
+
+/* Efecto 2: Transformación 3D */
+img {
+    transform: rotateX(45deg);
+}
+
+/* Efecto 3: Transición */
+p {
+    transition: color 0.5s ease;
+
+}
+
+p:hover {
+    color: red;
+}
+
+/* Efecto 4: Animación */
+@keyframes mover {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100px);
+    }
+}
+
+img {
+    animation: mover 1s infinite alternate;
+}
